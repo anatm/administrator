@@ -1,4 +1,5 @@
-Symfony Standard Edition
+Este es el primer README de la pagina web de Warriors Defender  
+Symfony Standar Edition
 ========================
 
 Welcome to the Symfony Standard Edition - a fully-functional Symfony2
@@ -67,3 +68,4 @@ Enjoy!
 [11]: http://symfony.com/doc/2.6/cookbook/logging/monolog.html
 [12]: http://symfony.com/doc/2.6/cookbook/assetic/asset_management.html
 [13]: http://symfony.com/doc/2.6/bundles/SensioGeneratorBundle/index.html
+# warriorsgit
