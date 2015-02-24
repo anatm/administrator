@@ -1,0 +1,20 @@
+Dscorp\WarriorsBundle\Entity\mapa:
+    type: entity
+    table: null
+    repositoryClass: Dscorp\WarriorsBundle\Entity\mapaRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        urlimagenMapa:
+            type: string
+            length: 255
+            column: urlimagen_mapa
+        descripcionMapa:
+            type: string
+            length: 255
+            column: descripcion_mapa
+    lifecycleCallbacks: {  }

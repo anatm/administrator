@@ -1,0 +1,16 @@
+Dscorp\WarriorsBundle\Entity\seccion:
+    type: entity
+    table: null
+    repositoryClass: Dscorp\WarriorsBundle\Entity\seccionRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombreSeccion:
+            type: string
+            length: '50'
+            column: nombre_seccion
+    lifecycleCallbacks: {  }

@@ -1,0 +1,30 @@
+seccion:
+    path:     /
+    defaults: { _controller: "DscorpWarriorsBundle:seccion:index" }
+
+seccion_show:
+    path:     /{id}/show
+    defaults: { _controller: "DscorpWarriorsBundle:seccion:show" }
+
+seccion_new:
+    path:     /new
+    defaults: { _controller: "DscorpWarriorsBundle:seccion:new" }
+
+seccion_create:
+    path:     /create
+    defaults: { _controller: "DscorpWarriorsBundle:seccion:create" }
+    methods:  POST
+
+seccion_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "DscorpWarriorsBundle:seccion:edit" }
+
+seccion_update:
+    path:     /{id}/update
+    defaults: { _controller: "DscorpWarriorsBundle:seccion:update" }
+    methods:  [POST, PUT]
+
+seccion_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "DscorpWarriorsBundle:seccion:delete" }
+    methods:  [POST, DELETE]

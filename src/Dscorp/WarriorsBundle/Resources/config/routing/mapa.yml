@@ -1,0 +1,30 @@
+mapa:
+    path:     /
+    defaults: { _controller: "DscorpWarriorsBundle:mapa:index" }
+
+mapa_show:
+    path:     /{id}/show
+    defaults: { _controller: "DscorpWarriorsBundle:mapa:show" }
+
+mapa_new:
+    path:     /new
+    defaults: { _controller: "DscorpWarriorsBundle:mapa:new" }
+
+mapa_create:
+    path:     /create
+    defaults: { _controller: "DscorpWarriorsBundle:mapa:create" }
+    methods:  POST
+
+mapa_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "DscorpWarriorsBundle:mapa:edit" }
+
+mapa_update:
+    path:     /{id}/update
+    defaults: { _controller: "DscorpWarriorsBundle:mapa:update" }
+    methods:  [POST, PUT]
+
+mapa_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "DscorpWarriorsBundle:mapa:delete" }
+    methods:  [POST, DELETE]

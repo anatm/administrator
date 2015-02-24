@@ -1,0 +1,27 @@
+dscorp_warriors_pagina:
+    resource: "@DscorpWarriorsBundle/Resources/config/routing/pagina.yml"
+    prefix:   /pagina
+
+dscorp_warriors_accionmenu:
+    resource: "@DscorpWarriorsBundle/Resources/config/routing/accionmenu.yml"
+    prefix:   /accionmenu
+
+dscorp_warriors_menu:
+    resource: "@DscorpWarriorsBundle/Resources/config/routing/menu.yml"
+    prefix:   /menu
+
+dscorp_warriors_seccion:
+    resource: "@DscorpWarriorsBundle/Resources/config/routing/seccion.yml"
+    prefix:   /seccion
+
+dscorp_warriors_mapa:
+    resource: "@DscorpWarriorsBundle/Resources/config/routing/mapa.yml"
+    prefix:   /mapa
+
+dscorp_warriors_calendario:
+    resource: "@DscorpWarriorsBundle/Resources/config/routing/calendario.yml"
+    prefix:   /calendario
+
+dscorp_warriors_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: DscorpWarriorsBundle:Default:index }

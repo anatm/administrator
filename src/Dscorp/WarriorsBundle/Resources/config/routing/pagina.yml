@@ -1,0 +1,30 @@
+pagina:
+    path:     /
+    defaults: { _controller: "DscorpWarriorsBundle:pagina:index" }
+
+pagina_show:
+    path:     /{id}/show
+    defaults: { _controller: "DscorpWarriorsBundle:pagina:show" }
+
+pagina_new:
+    path:     /new
+    defaults: { _controller: "DscorpWarriorsBundle:pagina:new" }
+
+pagina_create:
+    path:     /create
+    defaults: { _controller: "DscorpWarriorsBundle:pagina:create" }
+    methods:  POST
+
+pagina_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "DscorpWarriorsBundle:pagina:edit" }
+
+pagina_update:
+    path:     /{id}/update
+    defaults: { _controller: "DscorpWarriorsBundle:pagina:update" }
+    methods:  [POST, PUT]
+
+pagina_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "DscorpWarriorsBundle:pagina:delete" }
+    methods:  [POST, DELETE]

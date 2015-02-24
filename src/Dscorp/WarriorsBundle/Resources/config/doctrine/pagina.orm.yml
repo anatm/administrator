@@ -1,0 +1,27 @@
+Dscorp\WarriorsBundle\Entity\pagina:
+    type: entity
+    table: null
+    repositoryClass: Dscorp\WarriorsBundle\Entity\paginaRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        tituloPagina:
+            type: string
+            length: '50'
+            column: titulo_pagina
+        urlimagenPagina:
+            type: string
+            length: '50'
+            column: urlimagen_pagina
+        descripcionPagina:
+            type: string
+            length: 255
+            column: descripcion_pagina
+    oneToOne:
+        menu:
+           targetEntity: Dscorp\WarriorsBundle\Entity\menu
+    lifecycleCallbacks: {  }

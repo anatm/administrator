@@ -1,0 +1,111 @@
+<?php
+
+namespace Dscorp\WarriorsBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * usuario
+ */
+class usuario
+{
+    /**
+     * @var integer
+     */
+    private $id;
+
+    /**
+     * @var string
+     */
+    private $nombreUsuario;
+
+    /**
+     * @var string
+     */
+    private $passwordUsuario;
+
+    /**
+     * @var string
+     */
+    private $emailUsuario;
+
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set nombreUsuario
+     *
+     * @param string $nombreUsuario
+     * @return usuario
+     */
+    public function setNombreUsuario($nombreUsuario)
+    {
+        $this->nombreUsuario = $nombreUsuario;
+
+        return $this;
+    }
+
+    /**
+     * Get nombreUsuario
+     *
+     * @return string 
+     */
+    public function getNombreUsuario()
+    {
+        return $this->nombreUsuario;
+    }
+
+    /**
+     * Set passwordUsuario
+     *
+     * @param string $passwordUsuario
+     * @return usuario
+     */
+    public function setPasswordUsuario($passwordUsuario)
+    {
+        $this->passwordUsuario = $passwordUsuario;
+
+        return $this;
+    }
+
+    /**
+     * Get passwordUsuario
+     *
+     * @return string 
+     */
+    public function getPasswordUsuario()
+    {
+        return $this->passwordUsuario;
+    }
+
+    /**
+     * Set emailUsuario
+     *
+     * @param string $emailUsuario
+     * @return usuario
+     */
+    public function setEmailUsuario($emailUsuario)
+    {
+        $this->emailUsuario = $emailUsuario;
+
+        return $this;
+    }
+
+    /**
+     * Get emailUsuario
+     *
+     * @return string 
+     */
+    public function getEmailUsuario()
+    {
+        return $this->emailUsuario;
+    }
+}

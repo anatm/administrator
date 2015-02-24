@@ -1,0 +1,19 @@
+Dscorp\WarriorsBundle\Entity\accionmenu:
+    type: entity
+    table: null
+    repositoryClass: Dscorp\WarriorsBundle\Entity\accionmenuRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        descripcionAccionmenu:
+            type: string
+            length: 255
+            column: descripcion_accionmenu
+    manyToOne:
+        menu:
+            targetEntity: Dscorp\WarriorsBundle\Entity\menu
+    lifecycleCallbacks: {  }

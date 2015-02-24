@@ -1,0 +1,32 @@
+Dscorp\WarriorsBundle\Entity\calendario:
+    type: entity
+    table: null
+    repositoryClass: Dscorp\WarriorsBundle\Entity\calendarioRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        diaCalendario:
+            type: string
+            length: 255
+            column: dia_calendario
+        mesCalendario:
+            type: string
+            length: 255
+            column: mes_calendario
+        anioCalendario:
+            type: string
+            length: 255
+            column: anio_calendario
+        tituloCalendario:
+            type: string
+            length: 255
+            column: titulo_calendario
+        descripcionCalendario:
+            type: string
+            length: 255
+            column: descripcion_calendario
+    lifecycleCallbacks: {  }

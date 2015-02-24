@@ -1,0 +1,30 @@
+calendario:
+    path:     /
+    defaults: { _controller: "DscorpWarriorsBundle:calendario:index" }
+
+calendario_show:
+    path:     /{id}/show
+    defaults: { _controller: "DscorpWarriorsBundle:calendario:show" }
+
+calendario_new:
+    path:     /new
+    defaults: { _controller: "DscorpWarriorsBundle:calendario:new" }
+
+calendario_create:
+    path:     /create
+    defaults: { _controller: "DscorpWarriorsBundle:calendario:create" }
+    methods:  POST
+
+calendario_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "DscorpWarriorsBundle:calendario:edit" }
+
+calendario_update:
+    path:     /{id}/update
+    defaults: { _controller: "DscorpWarriorsBundle:calendario:update" }
+    methods:  [POST, PUT]
+
+calendario_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "DscorpWarriorsBundle:calendario:delete" }
+    methods:  [POST, DELETE]

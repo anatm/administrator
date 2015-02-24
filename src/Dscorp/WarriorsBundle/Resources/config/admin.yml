@@ -1,0 +1,77 @@
+# ---------FUNCIONA COMO SI FUERA SERVICIOS---------
+# Acme/DemoBundle/Resources/config/admin.yml
+# SECCIONADMIN
+services:
+    sonata.admin.seccion:
+        class: Dscorp\WarriorsBundle\Admin\seccionAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Entidades", label: "seccion" }
+        arguments:
+            - ~
+            - Dscorp\WarriorsBundle\Entity\seccion
+            - ~
+        calls:
+            - [ setTranslationDomain, [DscorpWarriorsBundle]]
+
+# MENUADMIN
+    sonata.admin.menu:
+        class: Dscorp\WarriorsBundle\Admin\menuAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Entidades", label: "menu" }
+        arguments:
+            - ~
+            - Dscorp\WarriorsBundle\Entity\menu
+            - ~
+        calls:
+            - [ setTranslationDomain, [DscorpWarriorsBundle]]
+
+# PAGINAADMIN
+    sonata.admin.pagina:
+        class: Dscorp\WarriorsBundle\Admin\paginaAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Entidades", label: "pagina" }
+        arguments:
+            - ~
+            - Dscorp\WarriorsBundle\Entity\pagina
+            - ~
+        calls:
+            - [ setTranslationDomain, [DscorpWarriorsBundle]]
+
+
+# ACCIONMENUADMIN
+    sonata.admin.accionmenu:
+        class: Dscorp\WarriorsBundle\Admin\accionmenuAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Entidades", label: "accionmenu" }
+        arguments:
+            - ~
+            - Dscorp\WarriorsBundle\Entity\accionmenu
+            - ~
+        calls:
+            - [ setTranslationDomain, [DscorpWarriorsBundle]]
+
+
+# CALENDARIOADMIN
+    sonata.admin.calendario:
+        class: Dscorp\WarriorsBundle\Admin\calendarioAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Entidades", label: "calendario" }
+        arguments:
+            - ~
+            - Dscorp\WarriorsBundle\Entity\calendario
+            - ~
+        calls:
+            - [ setTranslationDomain, [DscorpWarriorsBundle]]
+
+
+# MAPAADMIN
+    sonata.admin.mapa:
+        class: Dscorp\WarriorsBundle\Admin\mapaAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Entidades", label: "mapa" }
+        arguments:
+            - ~
+            - Dscorp\WarriorsBundle\Entity\mapa
+            - ~
+        calls:
+            - [ setTranslationDomain, [DscorpWarriorsBundle]]

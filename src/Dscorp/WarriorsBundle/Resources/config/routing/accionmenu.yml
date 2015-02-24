@@ -1,0 +1,30 @@
+accionmenu:
+    path:     /
+    defaults: { _controller: "DscorpWarriorsBundle:accionmenu:index" }
+
+accionmenu_show:
+    path:     /{id}/show
+    defaults: { _controller: "DscorpWarriorsBundle:accionmenu:show" }
+
+accionmenu_new:
+    path:     /new
+    defaults: { _controller: "DscorpWarriorsBundle:accionmenu:new" }
+
+accionmenu_create:
+    path:     /create
+    defaults: { _controller: "DscorpWarriorsBundle:accionmenu:create" }
+    methods:  POST
+
+accionmenu_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "DscorpWarriorsBundle:accionmenu:edit" }
+
+accionmenu_update:
+    path:     /{id}/update
+    defaults: { _controller: "DscorpWarriorsBundle:accionmenu:update" }
+    methods:  [POST, PUT]
+
+accionmenu_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "DscorpWarriorsBundle:accionmenu:delete" }
+    methods:  [POST, DELETE]
